@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wyszukiwarka Filmów</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Wyszukiwarka Filmów</h1>
+
+      <div>
+        <label for="title">Wpisz tytuł:</label>
+        <input type="text" id="title" placeholder="np. Batman" />
+      </div>
+
+      <div>
+        <label for="type">Wybierz typ:</label>
+        <select id="type">
+          <option value="movie">Film</option>
+          <option value="series">Serial</option>
+          <option value="episode">Epizod</option>
+        </select>
+      </div>
+
+      <button id="search-btn">Szukaj</button>
+
+      <table id="results">
+        <thead>
+          <tr>
+            <th>Tytuł</th>
+            <th>Rok</th>
+            <th>Kraj</th>
+            <th>Rodzaj</th>
+            <th>Plakat</th>
+          </tr>
+        </thead>
+
+        <tbody></tbody>
+      </table>
+
+      <div id="paginationControls" class="paginationContainer">
+        <!-- Pagination buttons will be dynamically added here -->
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
